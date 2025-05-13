@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
   letter-spacing: 1.1px;
 }
 
@@ -22,16 +21,14 @@ body {
   overflow: hidden;
   margin: 1px;
 }
-
+/*----header ---*/
 #header_container {
   position: relative; /* Important for positioning background image and ::before */
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 20vw; /* Or set a fixed px height if needed */
-  justify-content: center;
+  height: 150px;
   align-items: center;
-  border: 1px solid red;
   overflow: hidden;
   margin: 1px;
 }
@@ -64,12 +61,13 @@ body {
 #logo_container {
   border: 1px solid blue;
   width: 150px;
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2px;
   z-index: 2;
+  margin-left: 5px;
 }
 
 #slogan_container {
@@ -83,3 +81,5 @@ body {
   align-items: center;
   z-index: 2;
 }
+/*---- main body----*/
+
