@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #FFC2B4;
+  
   letter-spacing: 1.1px;
 }
 
@@ -20,6 +20,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin: 1px;
 }
 
 #header_container {
@@ -27,11 +28,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 18vw; /* Or set a fixed px height if needed */
+  height: 20vw; /* Or set a fixed px height if needed */
   justify-content: center;
   align-items: center;
   border: 1px solid red;
   overflow: hidden;
+  margin: 1px;
 }
 
 #header_container::before {
@@ -55,6 +57,8 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  object-position: center;
+  margin: 1px;
 }
 
 #logo_container {
