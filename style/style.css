@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
+  color: #FFC2B4;
+  letter-spacing: 1.1px;
 }
 
 html,
@@ -12,69 +13,69 @@ body {
 }
 
 body {
-  margin: 0;
   overflow: hidden;
-  font-family: sans-serif;
 }
 
 #body_Container {
-  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-#body_image {
-  position: absolute;
-  top: 0;
-  left: 0;
+#header_container {
+  position: relative; /* Important for positioning background image and ::before */
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
+  height: 18vw; /* Or set a fixed px height if needed */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
-#body_Container::before {
+#header_container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(244, 235, 217, 0.6); /* Optional dark tint */
+  background-color: rgba(244, 235, 217, 0.6); /* Optional blur overlay */
+  backdrop-filter: blur(6px); /* Adds blur effect */
   z-index: 1;
-  pointer-events: none; /* Let clicks pass through if needed */
+  pointer-events: none;
 }
-#header_container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid red;
+
+#header_image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 18vw;
-  margin: 2px;
-  justify-items: center;
-  align-items: center;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
+
 #logo_container {
   border: 1px solid blue;
   width: 150px;
   height: 120px;
-  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2px;
+  z-index: 2;
 }
-#slogan_container{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid brown;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin: 40px;
-    justify-content: center;
-    align-items: center;
 
-
-    
+#slogan_container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid brown;
+  font-family: "Tagesschrift", system-ui, sans-serif;
+  font-size: 18px;
+  margin: 40px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
