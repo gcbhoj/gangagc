@@ -63,13 +63,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 2px;
 }
 #slogan_container{
     display: flex;
+    flex-direction: column;
     border: 1px solid brown;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    margin: 20px;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+
 
     
 }
