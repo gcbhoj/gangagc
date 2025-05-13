@@ -1,5 +1,24 @@
 /*media Queries*/
+/*settings for screen size greater than 860px*/
 
+@media (min-width: 1080px) {
+  #slogan3_container {
+    display: none;
+  }
+  #slogan2_container {
+    display: none;
+  }
+}
+@media (min-width: 1020px) {
+    #slogan3_container {
+      display: none;
+    }
+    #slogan2_container {
+      display: none;
+    }
+  }
+
+/*settings for screen size less than 860px*/
 @media (max-width: 860px) {
   #logo_container {
     margin-right: 10px;
@@ -46,6 +65,7 @@
     margin-left: 5px;
   }
   #slogan_container {
+    display: none;
     margin: 0 auto;
     font-size: 14px;
     line-height: 20px;
@@ -54,5 +74,48 @@
   }
   #slogan_container h3:nth-child(2) {
     padding-left: 0px;
+  }
+  #slogan2_container {
+    display: block;
+    z-index: 10;
+  }
+}
+@media (max-width: 650px) {
+  #slogan2_container {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  #slogan2_container {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  #slogan2_container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 510px) {
+  #slogan3_container {
+    display: block;
+  }
+  #slogan2_container {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #slogan3_container {
+    font-size: 16px;
+  }
+}
+@media (max-width: 430px) {
+  #slogan3_container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 385px) {
+  #slogan3_container {
+    display: none;
   }
 }

@@ -62,12 +62,12 @@ body {
 
 #logo_container {
   width: 150px;
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 1px;
+  margin: 0px;
   z-index: 2;
   margin-left: 5px;
   margin-right: 15px;
@@ -76,7 +76,6 @@ body {
 #slogan_container {
   display: flex;
   flex-direction: column;
-  border: 1px solid brown;
   font-family: "Tagesschrift", system-ui, sans-serif;
   font-size: 18px;
   margin: 0 auto;
@@ -85,13 +84,11 @@ body {
   line-height: 30px;
   font-style: italic;
 }
-#slogan_container h3{
+#slogan_container h3 {
   margin: 5px;
 }
-#slogan_container h3:nth-child(2){
-  color: red;
+#slogan_container h3:nth-child(2) {
   padding-left: 40px;
- 
 }
 #header_contents {
   z-index: 10;
@@ -102,6 +99,78 @@ body {
   border-radius: 5px;
   align-items: center;
 }
+#slogan2_container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Tagesschrift", system-ui, sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  z-index: 2;
+  margin-top: 15px;
+  line-height: 30px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+#slogan2_container h3 {
+  margin: 5px;
+}
+#slogan3_container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Tagesschrift", system-ui, sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  z-index: 2;
+  margin-top: 15px;
+  line-height: 30px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+#slogan3_container h3 {
+  margin: 5px;
+}
+#head_user_controls {
+  margin-right: 20px;
+  height: 140px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: flex-end;
+  justify-content: center;
+}
+#languageSelector {
+  width: 60px;
+  margin: 5px;
+  height: 23px;
+  font-family: "Tagesschrift", system-ui, sans-serif;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.6);
+}
+#head_user_controls button:nth-of-type(1),
+#head_user_controls button:nth-of-type(2) {
+  margin: 5px;
+  height: 23px;
+  width: 60px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  font-family: "Tagesschrift", system-ui, sans-serif;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#head_user_controls button:nth-of-type(1):hover,
+#head_user_controls button:nth-of-type(2):hover {
+  box-shadow: -5px -5px 5px #706c61;
+  transform: scale(1.15);
+  background-color: #A59132;
+  color: aqua;
+}
+
 /*---- main body----*/
 #main_container {
   margin: 1px;
