@@ -10,13 +10,13 @@
   }
 }
 @media (min-width: 1020px) {
-    #slogan3_container {
-      display: none;
-    }
-    #slogan2_container {
-      display: none;
-    }
+  #slogan3_container {
+    display: none;
   }
+  #slogan2_container {
+    display: none;
+  }
+}
 
 /*settings for screen size less than 860px*/
 @media (max-width: 860px) {
@@ -26,6 +26,9 @@
   }
   #slogan_container {
     margin: auto;
+  }
+  #head_user_controls {
+    display: none;
   }
 }
 @media (max-width: 775px) {
